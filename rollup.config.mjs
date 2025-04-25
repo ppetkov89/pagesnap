@@ -3,12 +3,12 @@ import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 
 export default {
-  input: 'src/PageSnap.js',
+  input: 'src/pagesnap.js',
   output: [
     {
       file: 'dist/pagesnap.min.js',
       format: 'umd',
-      name: 'PageSnap',
+      name: 'pagesnap',
       globals: {
         'lodash.throttle': 'throttle',
         'tinygesture': 'TinyGesture',

@@ -2,11 +2,20 @@
   "name": "pagesnap",
   "version": "1.0.0",
   "description": "Lightweight full-page scrolling library in vanilla JavaScript.",
-  "main": "dist/pagesnap.js",
-  "module": "dist/pagesnap.js",
+  "type": "module",
+  "main": "dist/pagesnap.min.js",
+  "module": "dist/pagesnap.min.js",
   "unpkg": "dist/pagesnap.min.js",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ppetkov89/pagesnap.git"
+  },
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "scroll",
@@ -19,6 +28,9 @@
   ],
   "author": "Petko Petkov",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ppetkov89/pagesnap/issues"
+  },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^28.0.3",
     "@rollup/plugin-node-resolve": "^16.0.1",
@@ -28,5 +40,6 @@
   "dependencies": {
     "lodash.throttle": "^4.1.1",
     "tinygesture": "^3.0.0"
-  }
+  },
+  "homepage": "https://github.com/ppetkov89/pagesnap#readme"
 }

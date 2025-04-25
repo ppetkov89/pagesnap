@@ -1,7 +1,7 @@
 import throttle from "lodash.throttle";
 import TinyGesture from "tinygesture";
 
-export default function PageSnap(containerSelector, options = {}) {
+export default function pagesnap(containerSelector, options = {}) {
   // Select the container and its child sections
   const container = document.querySelector(containerSelector);
   const sections = Array.from(container?.children ?? []);
@@ -17,7 +17,7 @@ export default function PageSnap(containerSelector, options = {}) {
   const onAfterLoad = options.onAfterLoad || null;
 
   if (!container || sections.length === 0) {
-    throw new Error("PageSnap error: Container or sections not found.");
+    throw new Error("pagesnap error: Container or sections not found.");
   }
 
   // Internal state
@@ -37,7 +37,7 @@ export default function PageSnap(containerSelector, options = {}) {
   document.body.appendChild(navContainer);
 
   /**
-   * Determines if PageSnap is currently active based on screen width
+   * Determines if pagesnap is currently active based on screen width
    */
   function isEnabled() {
     return window.innerWidth >= disableBelow;
@@ -195,7 +195,7 @@ export default function PageSnap(containerSelector, options = {}) {
   }
 
   /**
-   * Fully disable PageSnap and clean up DOM/event listeners
+   * Fully disable pagesnap and clean up DOM/event listeners
    */
   function destroy() {
     unbindEvents();
@@ -205,7 +205,7 @@ export default function PageSnap(containerSelector, options = {}) {
   }
 
   /**
-   * Re-initialize PageSnap after destroy
+   * Re-initialize pagesnap after destroy
    */
   function rebuild() {
     if (!destroyed) return;

@@ -1,6 +1,6 @@
-# PageSnap
+# pagesnap
 
-**PageSnap** is a lightweight, zero-dependency JavaScript library for creating full-page scrolling websites — similar to `fullPage.js`, but built from scratch using modern practices.
+**pagesnap** is a lightweight, zero-dependency JavaScript library for creating full-page scrolling websites — similar to `fullPage.js`, but built from scratch using modern practices.
 
 ✅ Supports vertical scroll snapping  
 ✅ Mouse, keyboard, and touch navigation  
@@ -21,7 +21,7 @@ npm install pagesnap
 Or use via CDN:
 
 ```html
-<script src="dist/pagesnap.min.js"></script>
+<script src="https://unpkg.com/pagesnap"></script>
 ```
 
 ---
@@ -64,9 +64,9 @@ section {
 ### 3. JavaScript
 
 ```javascript
-import PageSnap from 'pagesnap';
+import pagesnap from 'pagesnap';
 
-const snap = PageSnap('#container', {
+const snap = pagesnap('#container', {
   delay: 700,
   loop: true,
   hash: true,
@@ -100,7 +100,7 @@ const snap = PageSnap('#container', {
 ```javascript
 snap.goTo(index);          // Scroll to section index
 snap.getCurrent();         // Returns current section index
-snap.destroy();            // Disable PageSnap and unbind everything
+snap.destroy();            // Disable pagesnap and unbind everything
 snap.rebuild();            // Re-enable after destroy
 ```
 

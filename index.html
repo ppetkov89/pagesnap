@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>PageSnap Demo</title>
+  <title>pagesnap Demo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <!-- 🔥 Minimal CSS -->
@@ -27,7 +27,7 @@
     .section:nth-child(2) { background: #1dd1a1; }
     .section:nth-child(3) { background: #54a0ff; }
 
-    /* PageSnap-specific CSS */
+    /* pagesnap-specific CSS */
     .pagesnap-container {
       position: relative;
       overflow: hidden;
@@ -79,12 +79,12 @@
     </div>
   </div>
 
-  <!-- 🔥 Include your ready PageSnap minified -->
+  <!-- 🔥 Include your ready pagesnap minified -->
   <script src="dist/pagesnap.min.js"></script>
 
   <!-- 🔁 Initialize -->
   <script>
-    const snap = PageSnap('#container', {
+    const snap = pagesnap('#container', {
       disableBelow: 768,
       delay: 800,
       onBeforeLeave: (from, to) => console.log(`Leaving ${from} → ${to}`),
