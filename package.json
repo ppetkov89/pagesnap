@@ -1,0 +1,32 @@
+{
+  "name": "pagesnap",
+  "version": "1.0.0",
+  "description": "Lightweight full-page scrolling library in vanilla JavaScript.",
+  "main": "dist/pagesnap.js",
+  "module": "dist/pagesnap.js",
+  "unpkg": "dist/pagesnap.min.js",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "keywords": [
+    "scroll",
+    "fullpage",
+    "pagesnap",
+    "fullpage.js",
+    "smooth-scroll",
+    "vanilla-js",
+    "scroll-library"
+  ],
+  "author": "Petko Petkov",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.3",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@rollup/plugin-terser": "^0.4.4",
+    "rollup": "^4.40.0"
+  },
+  "dependencies": {
+    "lodash.throttle": "^4.1.1",
+    "tinygesture": "^3.0.0"
+  }
+}
