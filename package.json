@@ -1,6 +1,6 @@
 {
   "name": "pagesnap",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Lightweight full-page scrolling library in vanilla JavaScript.",
   "type": "module",
   "main": "dist/pagesnap.min.js",
