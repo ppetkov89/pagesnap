@@ -2,6 +2,8 @@
 
 **pagesnap** is a lightweight, zero-dependency JavaScript library for creating full-page scrolling websites.
 
+**Demo**: https://ppetkov89.github.io/pagesnap/
+
 ✅ Supports vertical scroll snapping  
 ✅ Mouse, keyboard, and touch navigation  
 ✅ URL hash anchors  
